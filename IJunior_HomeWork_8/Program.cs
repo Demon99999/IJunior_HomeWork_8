@@ -12,9 +12,9 @@ namespace IJunior_HomeWork_8
             countPeople = Convert.ToInt32(Console.ReadLine());
             int totalTime = countPeople * receptionTimeOfOnePerson;
             int minutesInHour = 60;
-            int countHours = totalTime/ minutesInHour;
-            int countMinutes = totalTime % minutesInHour;
-            Console.WriteLine($"Вы должны стоять в очереди {countHours} часа и {countMinutes} минут.");
+            int countHoursInQueue = totalTime/ minutesInHour;
+            int countMinutesInQueue = totalTime % minutesInHour;
+            Console.WriteLine($"Вы должны стоять в очереди {countHoursInQueue} часа и {countMinutesInQueue} минут.");
         }
     }
 }
